@@ -302,6 +302,7 @@ void DingDong(int MainSocket, serv_info ServInfo)
          {
             ServInfo.isOnline = false;
             ChangeTXT(ServInfo);
+            cout << ServInfo.id << ": ShoutDown" << endl;
             exit(0);
          }
 
