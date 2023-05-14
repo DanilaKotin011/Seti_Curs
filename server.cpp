@@ -350,7 +350,7 @@ void DingDong(int MainSocket, serv_info ServInfo)
             else
                count_clients++;
             
-            cout << ServInfo.id << ": New connection, socket fd is " << new_client << " ip is " << inet_ntoa(clientAddr.sin_addr) << "port is" << ntohs(clientAddr.sin_port) << endl;
+            cout << ServInfo.id << ": New connection, socket fd is " << new_client << " ip is " << inet_ntoa(clientAddr.sin_addr) << " port is " << ntohs(clientAddr.sin_port) << endl;
 
             //отправляем клиенту историю
             SendHistory(new_client, ServInfo.id);
